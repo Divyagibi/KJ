@@ -1,0 +1,357 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Keerikattu Jewellery | Exquisite Heritage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "secondary": "#5f5e5e",
+                "on-primary-fixed": "#261900",
+                "on-error": "#ffffff",
+                "on-primary-fixed-variant": "#584419",
+                "surface-container-low": "#f4f3f1",
+                "primary-container": "#e3c58e",
+                "tertiary-container": "#cac8c8",
+                "on-surface-variant": "#4d463b",
+                "on-secondary-container": "#656464",
+                "on-secondary": "#ffffff",
+                "tertiary": "#5f5e5e",
+                "primary-fixed-dim": "#e0c38c",
+                "surface-container-highest": "#e3e2e0",
+                "tertiary-fixed": "#e4e2e1",
+                "on-tertiary-fixed-variant": "#474747",
+                "surface-container": "#efeeec",
+                "on-background": "#1a1c1b",
+                "on-secondary-fixed": "#1c1b1b",
+                "inverse-on-surface": "#f1f1ef",
+                "primary-fixed": "#fedea5",
+                "surface-container-high": "#e9e8e6",
+                "on-primary": "#ffffff",
+                "secondary-container": "#e5e2e1",
+                "on-primary-container": "#665125",
+                "surface-variant": "#e3e2e0",
+                "secondary-fixed-dim": "#c8c6c5",
+                "inverse-surface": "#2f3130",
+                "on-error-container": "#93000a",
+                "surface-bright": "#faf9f7",
+                "on-tertiary-container": "#545454",
+                "on-secondary-fixed-variant": "#474646",
+                "on-tertiary": "#ffffff",
+                "on-tertiary-fixed": "#1b1c1c",
+                "outline": "#7e7669",
+                "surface-dim": "#dadad8",
+                "on-surface": "#1a1c1b",
+                "error": "#ba1a1a",
+                "secondary-fixed": "#e5e2e1",
+                "primary": "#725b2e",
+                "tertiary-fixed-dim": "#c8c6c6",
+                "surface-container-lowest": "#ffffff",
+                "error-container": "#ffdad6",
+                "inverse-primary": "#e0c38c",
+                "background": "#faf9f7",
+                "outline-variant": "#d0c5b6",
+                "surface-tint": "#725b2e",
+                "surface": "#faf9f7"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "edge-margin-mobile": "24px",
+                "stack-sm": "8px",
+                "stack-lg": "24px",
+                "section-gap": "160px",
+                "edge-margin-desktop": "80px",
+                "gutter": "32px",
+                "stack-md": "16px",
+                "container-max": "1440px"
+            },
+            "fontFamily": {
+                "label-sm": ["Inter"],
+                "label-caps": ["Inter"],
+                "headline-xl-mobile": ["Playfair Display"],
+                "headline-xl": ["Playfair Display"],
+                "body-md": ["Inter"],
+                "display-lg-mobile": ["Playfair Display"],
+                "display-lg": ["Playfair Display"],
+                "headline-md": ["Playfair Display"],
+                "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                "label-sm": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "display-lg-mobile": ["48px", {"lineHeight": "1.1", "fontWeight": "400"}],
+                "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal-text {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            animation: reveal 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        @keyframes reveal {
+            0% { transform: translateY(100%); }
+            100% { transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .luxury-gradient {
+            background: linear-gradient(180deg, rgba(250,249,247,0) 0%, rgba(250,249,247,1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md dark:bg-inverse-surface/80 border-b border-primary/30">
+<div class="flex justify-between items-center px-edge-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-widest">
+                Keerikattu Jewellery
+            </div>
+<div class="hidden md:flex gap-stack-lg items-center">
+
+
+
+
+
+</div>
+<div class="flex gap-stack-md items-center text-primary dark:text-primary-fixed-dim"><a class="font-label-caps text-label-caps mr-2 hover:text-primary-fixed transition-colors" href="tel:+914862223456">+91 9961709750&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Temple Road, Thodupuzha</a>
+<button class="scale-95 transition-transform duration-200">
+
+</button>
+<button class="scale-95 transition-transform duration-200">
+
+</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 z-0 fade-in">
+<img class="w-full h-full object-cover opacity-90" data-alt="A professional studio product shot of a high-end diamond and gold necklace displayed on a minimalist matte black pedestal. The lighting is dramatic and moody, focusing on the intricate craftsmanship and sparkling facets of the gems. The background is a soft, out-of-focus champagne gold gradient, creating a luxurious and elite atmosphere consistent with high-fashion jewelry editorials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6BG0sdBGDKigwSBmik4nwVfrXLwu0Qm7JmfGUT2Y4HcXyqh61E0BD8yqS_wqc_JsosoSE2wO7k746zIt0Ix8DzKq6Ly0qwMfbdvoSMXc78qPwQ9J1t56IWkzMDIOtw4l9asXlH_yrCzjBqfOuDHGwdRQk-IDzh8gMjlSRBIyX68AgHDkpJ3Gvh_q08ZRG5hAGBLsC3fmRURWqLupdMfzqVoJhXN6FpNGVW3F93Pj9jaXu4OJtGjsUBw">
+<div class="absolute inset-0 luxury-gradient"></div>
+</div>
+<div class="relative z-10 px-edge-margin-desktop w-full max-w-container-max mx-auto">
+<div class="max-w-3xl overflow-hidden">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-stack-md leading-none">
+<span class="block overflow-hidden"><span class="block reveal-text">Exquisite Heritage,</span></span>
+<span class="block overflow-hidden"><span class="block reveal-text">Modern Elegance.</span></span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-xl fade-in">
+                        Crafting the golden heritage of Thodupuzha with a timeless luxury glow.
+Discover pure sterling silver and exquisite coverings designed to be passed down through generations.
+                    </p>
+<div class="flex gap-stack-md fade-in" style="animation-delay: 0.8s;">
+</div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+<span class="font-label-caps text-[10px] tracking-[0.3em] text-outline uppercase">Scroll</span>
+<div class="w-[1px] h-12 bg-outline-variant relative overflow-hidden">
+<div class="absolute top-0 w-full h-1/2 bg-primary animate-bounce"></div>
+</div>
+</div>
+</section>
+<!-- Category Bento Grid -->
+<section class="py-section-gap px-edge-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 mb-stack-lg text-center">
+<span class="font-label-caps text-label-caps text-primary mb-2 block uppercase">Masterpieces</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Curated Collections</h2>
+</div>
+<!-- Category 1: Sterling Silver -->
+<div class="col-span-12 md:col-span-7 group cursor-pointer overflow-hidden relative h-[600px] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close-up artistic shot of premium sterling silver rings and bracelets arranged on a slab of rough white marble. The lighting is crisp and cool, highlighting the brilliant metallic sheen of the silver. The aesthetic is clean, minimalist, and high-contrast, evoking a sense of modern luxury and architectural purity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDC3RzeyYlBTCRyee4E-UWmkI_q8wTfaI2lImsc8j40jzqJDN56U4Fage42a5NUDq70RkU7ESg_B9B42BXJ_DBBGkM3o74bEGzEc6zRUxRbYOUTMn5YwrdCHaAMTlOogNFSfCZ6VV2Xh6MjlCVDJhm4621uNYuicUNsvSIGYNWaR0s-MCgecnnVTCu7_ITxnC9_46POrwea1AMfYtDEwDFoAzOXJbWJwVhsuV8r_K7OM3ps00aKmSm5Q" style="transform: scale(1);">
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<h3 class="font-headline-md text-headline-md mb-2">Premium Sterling Silver</h3>
+</div>
+</div>
+<!-- Category 2: Rose Gold -->
+<div class="col-span-12 md:col-span-5 group cursor-pointer overflow-hidden relative h-[600px] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Exquisite silver rose gold earrings presented on a velvet champagne-colored surface. The lighting is soft and warm, capturing the delicate pink hues of the metal. Fine shadows accentuate the intricate geometric details of the jewelry, reflecting a sophisticated and feminine luxury style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOba9okPT25Yen5ZgahQJtqaY6aGQ5NPKN4Q5NvOXvZHJyuWIMjrwCrwZv2qFCje9XyjX6T8NuEsSflyGEdBPFqUWhA7wpW6aPZA1YwrrWy-oWumdjwFsWFvmxC62g0744hOGANKu17TpmqUDuALVsFGMTG1kqGjhwUcIF6jEWGm23sBALDFp0eBN4jPlO81pWqh97cwvcdXkfF9z-F43HEELdFpjZJuj76wKrb4Htr_5sO7Qptgh0zQ" style="transform: scale(1);">
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<h3 class="font-headline-md text-headline-md mb-2">Exclusive Silver Rose Gold</h3>
+</div>
+</div>
+<!-- Category 3: Gold Plated -->
+<div class="col-span-12 group cursor-pointer overflow-hidden relative h-[400px] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="High-finish one gram gold plated necklaces draped over a minimalist stone sculpture in a bright, airy gallery setting. The scene uses high-key lighting to emphasize the rich gold color and polished finish. The composition is asymmetrical and modern, focusing on the intersection of traditional gold and modern art forms." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlhHCZ23_9iufk-WegRi-DHRNS60c4gazQx_IQASNdf6FYqcwKlLgMxtiVbacmOzvIHVw0UtDHiW0bf_ri4ZJRKezAZst_Z_z_UPon-S83wlTyHkZjc8_kuJaDATB7NLfpOWr5PAjAoAgzJaH4Mc1QQ1gvMiI5f9p_bJo72Tuq5ZGbZ0bmWzEvr0fWLtlrTfItu8BbMd25LT9FRkuAr5no6Xz3kaZL7_hYUEBxeTUma_TRRcMOUjpkAA" style="transform: scale(1);">
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500"></div>
+<div class="absolute inset-0 flex items-center justify-center text-white text-center">
+<div>
+<h3 class="font-display-lg text-headline-xl mb-4">High-Finish 1-Gram Gold</h3>
+</div>
+</div>
+</div>
+</div>
+</section><section class="relative h-[600px] flex items-center overflow-hidden bg-surface-container-highest">
+<div class="absolute inset-0 z-0">
+<img alt="Silver plating workshop" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR3aWfznhXb75CEsTbmLxWyFJeS0eEjeE--bdrUs8UQUcx-rElAY8uDujlm43kRqhGGUePlGhBltSuSK5p-6rP0FXWsowpG0dtA35994cK7vXNsvdeasBMMclehJARcwvh2NEgQoL2HNCs7im7e-GhGQjIF1_oJ3l9U4PSteky8-4v3pq72d5t57Pbg9s9MNEbIsc2fgizoo2_VnbgtJ0Nn2q2INDDYiUD_L4wEAtVUKKVemHbvq1ZUg">
+<div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
+</div>
+<div class="relative z-10 px-edge-margin-desktop w-full max-w-container-max mx-auto">
+<div class="max-w-xl text-white">
+
+<h2 class="font-headline-xl text-headline-xl mb-stack-md">Premium Silver Polishing Services</h2>
+<p class="font-body-lg text-body-lg mb-stack-lg opacity-90">
+        Restore your cherished heirlooms to their original mirror-like brilliance with our signature liquid silver plating.
+      </p>
+
+</div>
+</div>
+</section>
+<!-- Product Showcase Carousel (Implied Layout) -->
+<section class="bg-surface-container-low py-section-gap overflow-hidden">
+<div class="px-edge-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-stack-lg">
+<div>
+<span class="font-label-caps text-label-caps text-primary mb-2 block uppercase">The Signature Series</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">New Arrivals</h2>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex gap-gutter overflow-x-auto no-scrollbar snap-x pb-8">
+<!-- Product Card 1 -->
+<div class="min-w-[350px] snap-start group cursor-pointer">
+<div class="relative aspect-[4/5] bg-surface mb-stack-md overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A minimalist studio portrait of an elegant silver bracelet with a singular large emerald stone. The shot is tightly cropped, emphasizing the texture of the metal and the deep green of the gem. Lighting is controlled to create soft specular highlights, giving the product a three-dimensional and premium feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyDEyA2AkyzDsBeqgY5trySA3njnn7BMiOqFRccvOQj_cIl8Q_Ss7PJo_IZjOzovZpnNPTIsNuQ6n0OgagtkAS0GWT69KUnGOkf9gxhqFxlVukJ_D-RXG1d1oJN-eBZccCub8AUmNylKLZgiQbrpg4FmTt0AKo-f4rJGZUe971LF05a9nOppspfM1LV57Wqe9kCQdKz0lUZvx3rqeTHavESyOwLplCqIKrwY9ygExRdZzqhj5TGUataQ" style="transform: scale(1);">
+<div class="absolute inset-0 bg-inverse-surface/0 group-hover:bg-inverse-surface/5 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-surface/90 backdrop-blur-sm">
+<p class="font-label-caps text-label-caps text-primary">Quick View</p>
+</div>
+</div>
+<h4 class="font-headline-md text-[20px] mb-1">Celestial Silver Cuff</h4>
+
+</div>
+<!-- Product Card 2 -->
+<div class="min-w-[350px] snap-start group cursor-pointer">
+<div class="relative aspect-[4/5] bg-surface mb-stack-md overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Luxury gold-plated drop earrings hanging against a dark, textured background. The lighting catches the polished surfaces and intricate engravings, creating a play of light and shadow. The image represents high-quality 1-gram gold jewelry with the appearance of solid gold, styled for a premium clientele." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8b7UimiqXgkepzZl2kqyPORMdZfbHYefjEBzMTsTMjxbD-Wa40WG-bzqevRmJcUKWFiD_ciq6nHCf9YKUvJKzkTeqVfWp7ukLirRrz2kSarMLmDFp9FoJc0o0UGKw5INFmtTy9BZlUfVbdCOzScYUIjEZEh4oW8Hy6Fa--81jkOL9vJqty4vJuskaRDol8nBb4NHr-ALToqJlFdKtI8LT8FRUJi-7I1KXxDetkYP9igP3WsXiO2jrlw" style="transform: scale(1);">
+<div class="absolute inset-0 bg-inverse-surface/0 group-hover:bg-inverse-surface/5 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-surface/90 backdrop-blur-sm">
+<p class="font-label-caps text-label-caps text-primary">Quick View</p>
+</div>
+</div>
+<h4 class="font-headline-md text-[20px] mb-1">Vintage Bloom Drops</h4>
+
+</div>
+<!-- Product Card 3 -->
+<div class="min-w-[350px] snap-start group cursor-pointer">
+<div class="relative aspect-[4/5] bg-surface mb-stack-md overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A refined rose gold necklace with a delicate floral pendant, resting in a luxury velvet box. The lighting is intimate and warm, focused on the subtle shimmer of the rose gold. The scene is shot from a top-down perspective, emphasizing the graceful lines and boutique presentation of the jewelry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDep9PXtGLHlI963fZ_NvQPBDmMa3H7lEtYq_DBd0FbxN1fI_fMMawVJsFNfYGPyWzzB6hGHZrUDFulpXVssJlEgOlCDrNDBe2-MllMVpV14nuakjZcK2HXGbwi6ltyRooMAuH1vXZ3i9NJ8qRFanCy7PjODcUm4RenDhU_u7sTL5X-_YZS99C29XOP9dwqwvd4B8Fzmln5GALevhz4OO_I2k1dhpTnfKpcrFWAJZHID1hIgL0USxhJTQ" style="transform: scale(1);">
+<div class="absolute inset-0 bg-inverse-surface/0 group-hover:bg-inverse-surface/5 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-surface/90 backdrop-blur-sm">
+<p class="font-label-caps text-label-caps text-primary">Quick View</p>
+</div>
+</div>
+<h4 class="font-headline-md text-[20px] mb-1">Rose Quartz Aura</h4>
+
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Bespoke Section -->
+<section class="py-section-gap px-edge-margin-desktop bg-surface">
+<div class="max-w-3xl mx-auto text-center">
+<span class="font-label-caps text-label-caps text-primary mb-4 block uppercase tracking-widest">Our Story</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-stack-md">About Keerikattu Jewellery</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+      Rooted in the heart of Thodupuzha for decades, our brand has been a trusted custodian of Kerala's finest jewelry traditions. Located on Temple Road, we blend time-honored heritage with modern luxury, specializing in premium sterling silver and high-finish 1-gram gold covering. Every piece we craft, from sacred traditional designs to modern everyday essentials, reflects our unwavering commitment to exquisite artistry and brilliant perfection.
+    </p>
+</div>
+</section><section class="py-section-gap px-edge-margin-desktop text-center bg-inverse-surface text-surface">
+<div class="max-w-2xl mx-auto">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim mb-4 block uppercase tracking-[0.2em]">Crafted For You</span>
+<h2 class="font-headline-xl text-headline-xl mb-stack-md">A Heritage of Bespoke Beauty</h2>
+<p class="font-body-md text-body-md text-surface-variant mb-stack-lg">
+                    We invite you to visit our showroom on Temple Road, Thodupuzha, to experience the weight, texture, and brilliance of our collections in person. Immerse yourself in a private viewing of our latest designs and receive personalized jewelry styling advice from our master craftsmen.
+                </p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-inverse-surface dark:bg-on-surface-fixed">
+<div class="flex flex-col items-center gap-stack-lg py-section-gap px-edge-margin-desktop w-full max-w-container-max mx-auto">
+<div class="font-headline-xl text-headline-xl text-primary-fixed-dim tracking-tighter">
+                Keerikattu Jewellery
+            </div>
+<div class="text-center mb-4">
+<p class="font-body-md text-surface-variant opacity-90">Temple Road, Thodupuzha, Kerala, India 685584</p>
+<p class="font-body-md text-primary-fixed-dim mt-2">+91 9961709750</p>
+</div><div class="flex flex-wrap justify-center gap-stack-lg">
+
+
+
+
+
+
+</div>
+<div class="text-surface-variant font-label-caps text-[10px] opacity-60">
+                © 2024 Keerikattu Jewellery. All Rights Reserved.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple parallax / scroll effect for images
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImg = document.querySelector('section img');
+            if(heroImg) {
+                heroImg.style.transform = `translateY(${scrolled * 0.15}px)`;
+            }
+        });
+
+        // Hover animation for product cards
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const img = card.querySelector('img');
+                if(img) img.style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseleave', () => {
+                const img = card.querySelector('img');
+                if(img) img.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+
+
+</body></html>
